@@ -1,38 +1,98 @@
+body {
+  background: #ffffff;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 60px 20px;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: none;
+}
+
 .App {
-  text-align: center;
+  background: #ffffff;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 24px;
+  border: 2px solid #000000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App > div {
   display: flex;
-  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 15px;
+  font-family: inherit;
+  border: 2px solid #000000;
+  border-radius: 0;
+  outline: none;
+  background: #ffffff;
+  color: #000000;
+}
+
+input[type="text"]:focus {
+  background: #f5f5f5;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 15px;
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  background: #000000;
+  color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 0;
+}
+
+button:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 0 0;
+  border-top: 2px solid #000000;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 12px 0;
+  border-bottom: 1px solid #000000;
+  font-size: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+li button {
+  padding: 6px 12px;
+  font-size: 13px;
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+  font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li button:hover {
+  background: #000000;
+  color: #ffffff;
+}
+.active{
+  background-color: aquamarine;
 }
